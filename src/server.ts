@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import authRouter from './routes/authRoutes';
 import fieldRouter from './routes/fieldRoutes';
 import productRouter from './routes/productRoutes';
+import suggestionRouter from './routes/suggestionRoutes';
 
 // Initialize dotenv
 dotenv.config();
@@ -24,6 +25,7 @@ app.get('/', (_req: Request, res: Response) => {
 app.use('/api/auth', authRouter);
 app.use('/api/fields', fieldRouter);
 app.use('/api/products', productRouter);
+app.use('/api/suggestions', suggestionRouter);
 
 // Port configuration
 const PORT: number = parseInt(process.env.PORT || '3000', 10);

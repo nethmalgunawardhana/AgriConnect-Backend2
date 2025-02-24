@@ -9,6 +9,7 @@
     "serve": "node dist/server.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.22.0",
     "agriconnect-backend": "file:",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
