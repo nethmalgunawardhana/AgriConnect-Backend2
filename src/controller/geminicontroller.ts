@@ -58,7 +58,7 @@ Care Instructions: [Basic care instructions]
 2. [Next crop...]`;
 
         // Get model and generate content
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
         const result = await model.generateContent(prompt);
         const response = result.response;
         const text = response.text();
