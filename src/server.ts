@@ -6,7 +6,7 @@ import fieldRouter from './routes/fieldRoutes';
 import productRouter from './routes/productRoutes';
 import suggestionRouter from './routes/suggestionRoutes';
 import weatherRouter from './routes/weatherRoutes';
-import paymentRouter from './routes/productRoutes';
+import paymentRouter from './routes/paymentRoutes';
 
 // Initialize dotenv
 dotenv.config();
