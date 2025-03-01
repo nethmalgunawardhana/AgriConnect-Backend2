@@ -3,7 +3,7 @@ import { stripe } from '../config/stripe';
 import { db } from '../config/firebase';
 import jwt from 'jsonwebtoken';
 
-const SECRET_KEY = process.env.SECRET_KEY;
+const SECRET_KEY = process.env.JWT_SECRET;
 
 interface PaymentRequestBody {
   amount: number;
