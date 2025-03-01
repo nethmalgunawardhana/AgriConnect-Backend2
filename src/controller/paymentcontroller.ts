@@ -60,7 +60,7 @@ export const createPaymentIntent = async (req: Request, res: Response): Promise<
     }
 
     // Verify the product exists and belongs to the user
-    const productDoc = await db.collection('products').doc(productId).get();
+    const productDoc = await db.collection('harvests').doc(productId).get();
     if (!productDoc.exists) {
       res.status(404).json({ success: false, error: 'Product not found' });
       return;
